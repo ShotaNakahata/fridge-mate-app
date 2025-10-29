@@ -1,11 +1,15 @@
-import { GluestackUIProvider } from "@gluestack-ui/themed";
-import config from "../gluestack-ui.config";
 import { Slot } from "expo-router";
+import Header from "@/app/components/Header";
+import { View } from "react-native";
+import { Provider as PaperProvider } from "react-native-paper";
 
 export default function Layout() {
 	return (
-		<GluestackUIProvider config={config}>
-			<Slot />
-		</GluestackUIProvider>
+		<PaperProvider>
+			<View style={{ flex: 1 }} className="bg-black">
+				<Header />
+				<Slot />
+			</View>
+		</PaperProvider>
 	);
 }
