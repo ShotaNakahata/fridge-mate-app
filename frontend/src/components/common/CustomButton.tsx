@@ -36,25 +36,27 @@ export default function CustomButton({
 					borderColor: "#1677ff",
 					borderRadius: 6,
 					backgroundColor: mode === "contained" ? "#1677ff" : "white",
-					// ⚠️ minWidth削除（自動計算を阻害する）
+					alignItems: "center",
 				},
 				buttonStyle,
 			]}
 			contentStyle={[
 				{
 					paddingVertical: 4,
-					paddingHorizontal: 10, // ← 適度な内側余白
+					paddingHorizontal: 5, // ← 適度な内側余白
 					flexShrink: 1,
+					minHeight: 40,
 				},
 				contentStyle,
 			]}
 			labelStyle={[
 				{
 					fontSize: 14,
+					lineHeight: 16,
 					fontWeight: "600",
 					color: mode === "contained" ? "white" : "#1677ff",
 					textAlign: "center",
-					flexShrink: 0, // ← テキスト潰れ防止
+					flexShrink: 0,
 				},
 				labelStyle,
 			]}

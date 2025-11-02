@@ -12,7 +12,7 @@ export default function Header() {
 					menuStyle={{ backgroundColor: "#f0fff4" }} // Menu全体
 					itemStyle={{ color: "#006d32", fontSize: 15 }} // Optionの見た目
 					buttonStyle={{ width: "58%" }}
-					buttonLabelStyle={{ margin: 0 }}
+					buttonLabelStyle={{ margin: 0, padding: 0 }}
 				/>
 			</View>
 			<Appbar.Action icon="magnify" onPress={() => {}} />

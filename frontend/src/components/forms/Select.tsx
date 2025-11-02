@@ -45,8 +45,8 @@ export default function Select({
 					]}
 					contentStyle={[
 						{
-							paddingVertical: 4,
-							paddingHorizontal: 10,
+							paddingVertical: 0,
+							paddingHorizontal: 5,
 						},
 						buttonContentStyle,
 					]}
