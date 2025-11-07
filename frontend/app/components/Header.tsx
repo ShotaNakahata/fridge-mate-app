@@ -1,6 +1,7 @@
-import { View } from "react-native";
+import { View, StyleSheet } from "react-native";
 import { Appbar } from "react-native-paper";
 import Select from "@/src/components/forms/Select";
+import { colors } from "@/src/theme/colors";
 
 export default function Header() {
 	const fridgeOptions = ["冷蔵庫1", "Bさんの冷蔵庫", "要らない物", "その他"];
@@ -21,3 +22,9 @@ export default function Header() {
 		</Appbar.Header>
 	);
 }
+
+const styles = StyleSheet.create({
+	container: {
+		backgroundColor: colors.themeColor,
+	},
+});
