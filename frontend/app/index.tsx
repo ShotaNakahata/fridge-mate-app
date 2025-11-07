@@ -1,29 +1,16 @@
-import { View } from "react-native";
-import {
-	Text,
-	Button,
-	ButtonText,
-	Input,
-	InputField,
-} from "@gluestack-ui/themed";
+import { View, Text } from "react-native";
+import { Button, Card } from "react-native-paper";
 
 export default function Index() {
 	return (
-		<View className="flex-1 items-center justify-center bg-white">
-			{/* NativeWind クラスが効いているかテスト */}
-			<Text className="text-2xl font-bold text-blue-500 mb-6">
-				✅ Gluestack + NativeWind Test
-			</Text>
-
-			{/* Gluestack の Input */}
-			<Input className="mb-4 w-60">
-				<InputField placeholder="Type something..." />
-			</Input>
-
-			{/* Gluestack の Button */}
-			<Button onPress={() => alert("pushed")}>
-				<ButtonText>Press Me</ButtonText>
-			</Button>
+		<View className="flex-1 justify-center items-center bg-gray-100 p-4">
+			<Text>AAAA</Text>
+			{/* <Card style={{ width: "90%", padding: 16 }}>
+				<Text className="text-xl font-bold mb-4">冷蔵庫App</Text>
+				<Button mode="contained" onPress={() => console.log("clicked!")}>
+					食材を追加
+				</Button>
+			</Card> */}
 		</View>
 	);
 }
