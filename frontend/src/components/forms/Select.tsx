@@ -10,6 +10,7 @@ type Props = {
 	buttonStyle?: ViewStyle; // ボタン外枠のスタイル
 	buttonContentStyle?: ViewStyle; // ボタン内側（paddingなど）のスタイル
 	buttonLabelStyle?: TextStyle; // ボタン文字のスタイル
+	options?: string[];
 };
 
 export default function Select({
@@ -19,11 +20,10 @@ export default function Select({
 	buttonStyle,
 	buttonContentStyle,
 	buttonLabelStyle,
+	options = [],
 }: Props) {
 	const [visible, setVisible] = React.useState(false);
 	const [selected, setSelected] = React.useState(placeholder);
-
-	const options = ["Option A", "Option B", "Option C", "Option D"];
 
 	return (
 		<Menu

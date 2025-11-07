@@ -37,6 +37,7 @@ export default function CustomButton({
 					borderRadius: 6,
 					backgroundColor: mode === "contained" ? "#1677ff" : "white",
 					alignItems: "center",
+					justifyContent: "center",
 				},
 				buttonStyle,
 			]}
@@ -45,7 +46,8 @@ export default function CustomButton({
 					paddingVertical: 4,
 					paddingHorizontal: 5, // ← 適度な内側余白
 					flexShrink: 1,
-					minHeight: 40,
+					justifyContent: "center",
+					// minHeight: 40,
 				},
 				contentStyle,
 			]}
